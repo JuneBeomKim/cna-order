@@ -34,7 +34,7 @@ public class Order {
 
         demo.external.Cancellation cancellation = new demo.external.Cancellation();
         cancellation.setOrderid(this.getId());
-        cancellation.setStatus("DeliveryCancelled");
+        cancellation.setStatus("DeliveryCancelled"); 
 
         // mappings goes here
         OrderApplication.applicationContext.getBean(demo.external.CancellationService.class)
